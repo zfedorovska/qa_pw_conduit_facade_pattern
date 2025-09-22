@@ -42,7 +42,7 @@ export const test = base.extend<
       const reporter = new Reporter();
       const fileName = testInfo.file;
 
-      const [parentSuite, suite, subSuite] = parseTestTreeHierarchy(fileName, logger);
+      const [parentSuite, suite, subSuite] = parseTestTreeHierarchy(fileName);
 
       reporter.linkParentSuite(parentSuite);
       reporter.linkSuite(suite);
